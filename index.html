@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="New/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <div class="input-group w-50 m-auto">
+        <input type="text" id="searchInp" class="form-control" placeholder="Enter Student Roll Number" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+        <div class="input-group-append" id="button-addon4">
+          <button class="btn btn-outline-dark" onclick="searchResult()" type="button">Search</button>
+        </div>
+      </div><br>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Father Name</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="rolN"></td>
+                <td id="nam"></td>
+                <td id="fname"></td>
+                <td id="res"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div><br>
+        <table class="table table-primary">
+            <thead>
+                <tr>
+                    <th>Roll Number</th>
+                    <th>Name</th>
+                    <th>Father Name</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody id="studentData">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="New/app.js"></script>
+</body>
+</html>
